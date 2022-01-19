@@ -3,8 +3,6 @@
 
 ## Description
 
-----
-
 This project was a school assignment that includes the following requirements
 
 1. Visualise the Reversi game board on the terminal.  
@@ -18,8 +16,6 @@ This project was a school assignment that includes the following requirements
     * The runtime of the bot is limited under 1 second
 
 ## Technical Challenges
-
------
 
 ### Optimizing the algorithm
 
@@ -42,8 +38,6 @@ Instead of storing the position, I utilise the fact that only the best position 
 2. Use a `for` loop to evaluate all the current position position, and check if the position has a higher score than the current one.
 
 ### Heuristic Function
-
-----
 
 The Heuristic Function determines how does the computer determines if the move is "good". The better the position, the higher the score it has, which feds into the minimax algorithm. However, the criteria of analysis relies on:
 
@@ -72,23 +66,17 @@ After obtaining the criteria for analysis, I need to adjust the parameters to ma
 
 ### Algorithm
 
-----
-
 1. Using a more advance algorithm to analyse the position, in order to increase the efficiency
 
 2. Switch to `c++` lol
 
 ### Heuristic
 
-----
-
 1. Instead of manually adjusting the parameters, use a ML model to complete the testing and obtain the parameters
 
 2. Explore more criters to analyse for the position
 
 ### Code reusabiliy
-
-----
 
 1. The code utilise the boolean flag in the  function `checkLegalFlipDirection(tempBoard, i, j, 'B', n, true);` to both check and place the position on the board. A helper function with more definite purpose should be created.
 
